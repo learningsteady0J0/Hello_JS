@@ -11,6 +11,7 @@ form.append(button);
 var result = document.createElement('div');
 document.body.append(result);
 
+
 // textcontent  -> html 태그 사이에있는 값 <div> textcontent <div/>
 // value -> input과 같은 값이 저장되는 것 의 저장된 값.
 // button.addEventListener('click', ~~~) -> 버튼이 눌려졌을 때

@@ -69,6 +69,10 @@
   <ItemGroup>
     <Content Include="ninenine.html" />
     <Content Include="ninenine.js" />
+    <Content Include="NumberBaseBall.html" />
+    <Content Include="NumberBaseBall.js" />
+    <Content Include="TicTacToe.html" />
+    <Content Include="TicTacToe.js" />
     <Content Include="Web.config" />
     <Content Include="WordGame.html" />
     <Content Include="wordgame.js" />
