@@ -1,6 +1,13 @@
-﻿var num1 = Math.ceil(Math.random() * 9); // ceil 올림 floor 내림
-var num2 = Math.ceil(Math.random() * 9);
-var numResult = num1 * num2;
+﻿var num1;
+var num2;
+var numResult;
+
+function newNumber() {
+    num1 = Math.ceil(Math.random() * 9); // ceil 올림 floor 내림
+    num2 = Math.ceil(Math.random() * 9);
+    numResult = num1 * num2;
+}
+newNumber();
 
 var word = document.createElement('div');
 word.textContent = `${num1} * ${num2} = ??`;
@@ -18,13 +25,9 @@ document.body.append(result);
 
 form.addEventListener('submit', function callback(event) {
     event.preventDefault();
-    console.log(num1, num2);
-    console.log(input.value, numResult);
     if (Number(input.value) === numResult) {
         result.textContent = '정답';
-        num1 = Math.ceil(Math.random() * 9);
-        num2 = Math.ceil(Math.random() * 9);
-        numResult = num1 * num2;
+        newNumber();
         word.textContent = `${num1} * ${num2} = ??`;
         input.value = '';
         input.focus();
